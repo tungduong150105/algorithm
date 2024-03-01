@@ -77,9 +77,6 @@ struct ModNum {
   friend bool operator==(const ModNum &lhs, const ModNum &rhs) {
     return lhs.v == rhs.v;
   }
-  friend bool operator==(const ModNum &lhs, const ModNum &rhs) {
-    return lhs.v == rhs.v;
-  }
   friend bool operator!=(const ModNum &lhs, const ModNum &rhs) {
     return lhs.v != rhs.v;
   }
