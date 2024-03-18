@@ -57,12 +57,6 @@ struct Point {
   friend std::ostream &operator<<(std::ostream &os, const Point &lhs) {
     return os << "(" << lhs.x << ", " << lhs.y << ")";
   }
-  friend T dot(const Point &lhs, const Point &rhs) {
-    return lhs.x * rhs.x + lhs.y * rhs.y;
-  }
-  friend T cross(const Point &lhs, const Point &rhs) {
-    return lhs.x * rhs.y - lhs.y * rhs.x;
-  }
 };
 
 template <typename T>
